@@ -12,10 +12,14 @@ lot.push(car2)
 lot.push(car3)
 lot.push(car4)
 lot.push(car5)
-
+function old(miles){
+    return miles == "Sunroof"
+}
 lot.forEach(i => {
+    console.log(i.features.filter(old))
     console.log(i.brand)
     i.features.forEach(j => {
         console.log(j)
     });
 });
+
